@@ -1,2 +1,0 @@
-# cholo-ipsum
-😎
