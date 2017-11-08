@@ -6,7 +6,9 @@
   "dependencies": {
     "express": "^4.16.2",
     "mongoose": "^4.13.0",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "natural": "^0.5.4",
+    "wordnet-db": "^3.1.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
