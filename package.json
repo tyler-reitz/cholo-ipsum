@@ -17,7 +17,7 @@
     "nodemon": "^1.12.1"
   },
   "scripts": {
-    "api": "nodemon api/index.js"
+    "api": "nodemon server.js"
   },
   "keywords": [],
   "author": "Tyler Reitz <tdreitz@gmail.com>",

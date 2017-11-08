@@ -9,6 +9,7 @@ exports.find = function(req,res) {
 exports.tfidf = function (req, res) {
   homie.find({}, 'bioText', (err, docs) => {
     const corpus = getCorpus(docs)
+    console.log(corpus)
     res.json(corpus)
   })
 }
