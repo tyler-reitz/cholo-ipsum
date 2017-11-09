@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|UnifrakturMaguntia');
+
+:root {
+  --font-serif: 'IM Fell DW Pica SC', serif;
+  --font-slab: 'UnifrakturMaguntia', cursive;
+}

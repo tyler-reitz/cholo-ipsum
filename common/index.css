@@ -1,0 +1,10 @@
+@import '../node_modules/normalize.css';
+@import './styles/typography.css';
+
+body {
+  font-family: var(--font-serif);
+}
+
+h1 {
+  font-family: var(--font-slab);
+}
