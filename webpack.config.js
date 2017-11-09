@@ -1,6 +1,5 @@
-const commonPaths = require('./.build-utils/common-paths')
+const commonPaths = require('./config/common-paths')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
 
 module.exports = {
   entry: commonPaths.entry,
