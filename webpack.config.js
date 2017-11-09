@@ -1,28 +1,6 @@
-const commonPaths = require('./config/common-paths')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpackMerge = require('webpack-merge')
+const commonConfig = require('./config/webpack.commons')
+const devConfig = require('./config/webpack.dev')
+const plugins = require('./config/addons/webpack.htmlplugin')
 
-module.exports = {
-  entry: commonPaths.entry,
-  output: {
-    path: commonPaths.output,
-    filename: 'bundle.js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
-    ]
-  },
-  devServer: {
-    contentBase: commonPaths.dist,
-  },
-  devtool: 'source-map',
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: `${commonPaths.entry}/index.html`
-    })
-  ]
-}
+module.exports = webpackMerge(commonConfig, devConfig, plugins)
