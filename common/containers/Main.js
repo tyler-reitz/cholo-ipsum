@@ -20,12 +20,9 @@ class App extends Component {
     return (
       <div>
         <h1>Cholo Ipsum</h1>
-        <p>
-          {corpus && corpus.reduce(
-            (acc, {bioText}) => `${acc} ${bioText}`, 
-            ' '
-          )}
-        </p>
+        {corpus && corpus.map(({ _id, bioText }) =>
+          <p key={_id}>{bioText}</p>
+        )}
       </div>
     )
   }
